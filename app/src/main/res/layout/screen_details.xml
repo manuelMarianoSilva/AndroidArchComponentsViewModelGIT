@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    tools:context=".home.details.DetailsFragment">
+
+    <TextView
+        android:id="@+id/tv_repo_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Repo name"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_repo_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Repo description" />
+
+    <View
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/forks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_forks"
+            android:text="13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/stars"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_stars"
+            android:text="14000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
